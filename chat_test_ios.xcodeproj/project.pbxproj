@@ -10,6 +10,9 @@
 		9CEAD3A670BB8B114ADEBCE0 /* Pods_chat_test_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECB11A2F8D3CF41C41BA908 /* Pods_chat_test_iosTests.framework */; };
 		AAD56B1D7A3A7651357DFA03 /* Pods_chat_test_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6678DC845A1ABCAF1E2B4E24 /* Pods_chat_test_iosUITests.framework */; };
 		BB5038A8A063AD129DDA62F5 /* Pods_chat_test_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44D9181A8CD810B39D39314 /* Pods_chat_test_ios.framework */; };
+		ED6B42AD1DA86D8500890EC9 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B42AC1DA86D8500890EC9 /* CustomTableViewController.swift */; };
+		ED6B42AF1DA86D9C00890EC9 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B42AE1DA86D9C00890EC9 /* CustomTableViewCell.swift */; };
+		ED6B42B21DA8902300890EC9 /* RoomAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B42B11DA8902300890EC9 /* RoomAll.swift */; };
 		ED9057AA1DA799DC007A0431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9057A91DA799DC007A0431 /* AppDelegate.swift */; };
 		ED9057AC1DA799DC007A0431 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9057AB1DA799DC007A0431 /* ViewController.swift */; };
 		ED9057AF1DA799DC007A0431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9057AD1DA799DC007A0431 /* Main.storyboard */; };
@@ -17,6 +20,8 @@
 		ED9057B41DA799DC007A0431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9057B21DA799DC007A0431 /* LaunchScreen.storyboard */; };
 		ED9057BF1DA799DC007A0431 /* chat_test_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9057BE1DA799DC007A0431 /* chat_test_iosTests.swift */; };
 		ED9057CA1DA799DC007A0431 /* chat_test_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9057C91DA799DC007A0431 /* chat_test_iosUITests.swift */; };
+		EDCDB98D1DAB73DD0070BFCC /* RoomCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCDB98C1DAB73DD0070BFCC /* RoomCreateViewController.swift */; };
+		EDCDB98F1DAB7B100070BFCC /* RoomCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCDB98E1DAB7B100070BFCC /* RoomCreate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,9 @@
 		D419873F752AA422F9AE7BC6 /* Pods-chat_test_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat_test_iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-chat_test_iosTests/Pods-chat_test_iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		D44D9181A8CD810B39D39314 /* Pods_chat_test_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chat_test_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E228C44ED9AA598D5CD84309 /* Pods-chat_test_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat_test_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chat_test_ios/Pods-chat_test_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		ED6B42AC1DA86D8500890EC9 /* CustomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		ED6B42AE1DA86D9C00890EC9 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		ED6B42B11DA8902300890EC9 /* RoomAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomAll.swift; sourceTree = "<group>"; };
 		ED9057A61DA799DC007A0431 /* chat_test_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chat_test_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9057A91DA799DC007A0431 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED9057AB1DA799DC007A0431 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +67,8 @@
 		ED9057C51DA799DC007A0431 /* chat_test_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chat_test_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9057C91DA799DC007A0431 /* chat_test_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chat_test_iosUITests.swift; sourceTree = "<group>"; };
 		ED9057CB1DA799DC007A0431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDCDB98C1DAB73DD0070BFCC /* RoomCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCreateViewController.swift; sourceTree = "<group>"; };
+		EDCDB98E1DAB7B100070BFCC /* RoomCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCreate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +122,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		ED6B42B01DA88FBC00890EC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDCDB98E1DAB7B100070BFCC /* RoomCreate.swift */,
+				ED6B42B11DA8902300890EC9 /* RoomAll.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		ED90579D1DA799DC007A0431 = {
 			isa = PBXGroup;
 			children = (
@@ -137,9 +156,13 @@
 		ED9057A81DA799DC007A0431 /* chat_test_ios */ = {
 			isa = PBXGroup;
 			children = (
+				EDCDB98C1DAB73DD0070BFCC /* RoomCreateViewController.swift */,
+				ED6B42B01DA88FBC00890EC9 /* Model */,
 				ED9057A91DA799DC007A0431 /* AppDelegate.swift */,
 				ED9057AB1DA799DC007A0431 /* ViewController.swift */,
 				ED9057AD1DA799DC007A0431 /* Main.storyboard */,
+				ED6B42AC1DA86D8500890EC9 /* CustomTableViewController.swift */,
+				ED6B42AE1DA86D9C00890EC9 /* CustomTableViewCell.swift */,
 				ED9057B01DA799DC007A0431 /* Assets.xcassets */,
 				ED9057B21DA799DC007A0431 /* LaunchScreen.storyboard */,
 				ED9057B51DA799DC007A0431 /* Info.plist */,
@@ -447,7 +470,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED9057AC1DA799DC007A0431 /* ViewController.swift in Sources */,
+				ED6B42AD1DA86D8500890EC9 /* CustomTableViewController.swift in Sources */,
+				ED6B42AF1DA86D9C00890EC9 /* CustomTableViewCell.swift in Sources */,
+				EDCDB98D1DAB73DD0070BFCC /* RoomCreateViewController.swift in Sources */,
 				ED9057AA1DA799DC007A0431 /* AppDelegate.swift in Sources */,
+				ED6B42B21DA8902300890EC9 /* RoomAll.swift in Sources */,
+				EDCDB98F1DAB7B100070BFCC /* RoomCreate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
