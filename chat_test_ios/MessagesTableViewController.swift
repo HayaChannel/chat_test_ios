@@ -1,51 +1,20 @@
 //
-//  CustomTableViewController.swift
+//  MessagesTableViewController.swift
 //  chat_test_ios
 //
-//  Created by Hayato Ishino on 2016/10/07.
+//  Created by Hayato Ishino on 2016/10/10.
 //  Copyright © 2016年 haya_channel. All rights reserved.
 //
 
 import UIKit
-import Alamofire
-import SwiftyJSON
 
-class CustomTableViewController: UITableViewController {
+class MessagesTableViewController: UITableViewController {
     
-    var roomsArray: [String] = []
-    
-    
-    @IBAction func ReloadRoom(_ sender: UIBarButtonItem) {
-        
-    }
-    
-    @IBAction func back(segue:UIStoryboardSegue){//戻るボタン用
-        self.tableView.reloadData()
-    }
-    
-    func indexRoom(){
-        Alamofire.request("http://localhost:3000/api/v1/rooms").responseJSON{response in
-            debugPrint(response)
-            
-            guard let rooms = response.result.value else{
-                return
-            }
-            
-            let json = JSON(rooms)
-            
-            json.forEach{ (_, json) in
-                let room = json["name"].string
-                self.roomsArray.append(room!)
-            }
-            self.tableView.reloadData()
-        }
-    }
-    
-    
+    private var messages:[Message] = [Message(body: "hogehoge"), Message(body: "fooooo"), Message(body: "barbar")]
 
     override func viewDidLoad() {
-        self.indexRoom()
         super.viewDidLoad()
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -67,24 +36,20 @@ class CustomTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return roomsArray.count
+        return messages.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! CustomTableViewCell
-        let room = roomsArray[indexPath.row]
-            cell.roomName.text = room
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell") as! MessagesTableViewCell
+        
+        let message = messages[indexPath.row]
+        
+        cell.MessageBody.text = message.body
+
         // Configure the cell...
 
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
-    {
-        //let selectData = tableView.cellForRow(at: indexPath as IndexPath)!.textLabel!.text
-        self.performSegue(withIdentifier: "showMessagesSegue", sender: nil)
-        
     }
     
 
@@ -123,17 +88,14 @@ class CustomTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        //if segue.identifier == "showMessagesSegue" {
-            
-        //}
     }
-    
+    */
+
 }

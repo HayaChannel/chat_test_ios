@@ -59,7 +59,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="4nE-yZ-CaR" kind="show" id="DLv-zi-MgL"/>
+                        <segue destination="4nE-yZ-CaR" kind="show" identifier="showMessagesSegue" id="wSF-Ss-jGs"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hBc-yh-aUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -120,22 +120,34 @@
             </objects>
             <point key="canvasLocation" x="1489" y="-610"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Messages Table View Controller-->
         <scene sceneID="0gt-BH-yjH">
             <objects>
-                <tableViewController id="4nE-yZ-CaR" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cng-Bu-wpB">
+                <tableViewController id="4nE-yZ-CaR" customClass="MessagesTableViewController" customModule="chat_test_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="112" sectionHeaderHeight="28" sectionFooterHeight="28" id="cng-Bu-wpB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aAr-jP-NNW">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" rowHeight="112" id="aAr-jP-NNW" customClass="MessagesTableViewCell" customModule="chat_test_ios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aAr-jP-NNW" id="2Dj-DK-dBv">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="112"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="body" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7s-XA-zM2">
+                                            <frame key="frameInset" minX="8" minY="8" width="343" height="96"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="MessageBody" destination="d7s-XA-zM2" id="djo-wz-ZuI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -146,7 +158,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAo-MQ-Ja5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2300" y="276"/>
+            <point key="canvasLocation" x="2300" y="275.71214392803603"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ev3-Y5-6Ta">

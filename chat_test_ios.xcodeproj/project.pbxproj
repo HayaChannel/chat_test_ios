@@ -13,6 +13,7 @@
 		ED6B42AD1DA86D8500890EC9 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B42AC1DA86D8500890EC9 /* CustomTableViewController.swift */; };
 		ED6B42AF1DA86D9C00890EC9 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B42AE1DA86D9C00890EC9 /* CustomTableViewCell.swift */; };
 		ED6B42B21DA8902300890EC9 /* RoomAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B42B11DA8902300890EC9 /* RoomAll.swift */; };
+		ED77EF921DB5EF67003912D8 /* MessagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED77EF911DB5EF66003912D8 /* MessagesTableViewCell.swift */; };
 		ED9057AA1DA799DC007A0431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9057A91DA799DC007A0431 /* AppDelegate.swift */; };
 		ED9057AC1DA799DC007A0431 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9057AB1DA799DC007A0431 /* ViewController.swift */; };
 		ED9057AF1DA799DC007A0431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9057AD1DA799DC007A0431 /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 		ED9057B41DA799DC007A0431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9057B21DA799DC007A0431 /* LaunchScreen.storyboard */; };
 		ED9057BF1DA799DC007A0431 /* chat_test_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9057BE1DA799DC007A0431 /* chat_test_iosTests.swift */; };
 		ED9057CA1DA799DC007A0431 /* chat_test_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9057C91DA799DC007A0431 /* chat_test_iosUITests.swift */; };
+		EDC1ADBF1DACB41100159601 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1ADBE1DACB41100159601 /* Message.swift */; };
+		EDC1ADC11DACB4E400159601 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1ADC01DACB4E400159601 /* MessagesTableViewController.swift */; };
 		EDCDB98D1DAB73DD0070BFCC /* RoomCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCDB98C1DAB73DD0070BFCC /* RoomCreateViewController.swift */; };
 		EDCDB98F1DAB7B100070BFCC /* RoomCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCDB98E1DAB7B100070BFCC /* RoomCreate.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +57,7 @@
 		ED6B42AC1DA86D8500890EC9 /* CustomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		ED6B42AE1DA86D9C00890EC9 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		ED6B42B11DA8902300890EC9 /* RoomAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomAll.swift; sourceTree = "<group>"; };
+		ED77EF911DB5EF66003912D8 /* MessagesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewCell.swift; sourceTree = "<group>"; };
 		ED9057A61DA799DC007A0431 /* chat_test_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chat_test_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9057A91DA799DC007A0431 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED9057AB1DA799DC007A0431 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 		ED9057C51DA799DC007A0431 /* chat_test_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chat_test_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9057C91DA799DC007A0431 /* chat_test_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chat_test_iosUITests.swift; sourceTree = "<group>"; };
 		ED9057CB1DA799DC007A0431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC1ADBE1DACB41100159601 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		EDC1ADC01DACB4E400159601 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		EDCDB98C1DAB73DD0070BFCC /* RoomCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCreateViewController.swift; sourceTree = "<group>"; };
 		EDCDB98E1DAB7B100070BFCC /* RoomCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCreate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +131,7 @@
 		ED6B42B01DA88FBC00890EC9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EDC1ADBE1DACB41100159601 /* Message.swift */,
 				EDCDB98E1DAB7B100070BFCC /* RoomCreate.swift */,
 				ED6B42B11DA8902300890EC9 /* RoomAll.swift */,
 			);
@@ -161,7 +168,9 @@
 				ED9057A91DA799DC007A0431 /* AppDelegate.swift */,
 				ED9057AB1DA799DC007A0431 /* ViewController.swift */,
 				ED9057AD1DA799DC007A0431 /* Main.storyboard */,
+				EDC1ADC01DACB4E400159601 /* MessagesTableViewController.swift */,
 				ED6B42AC1DA86D8500890EC9 /* CustomTableViewController.swift */,
+				ED77EF911DB5EF66003912D8 /* MessagesTableViewCell.swift */,
 				ED6B42AE1DA86D9C00890EC9 /* CustomTableViewCell.swift */,
 				ED9057B01DA799DC007A0431 /* Assets.xcassets */,
 				ED9057B21DA799DC007A0431 /* LaunchScreen.storyboard */,
@@ -473,7 +482,10 @@
 				ED6B42AD1DA86D8500890EC9 /* CustomTableViewController.swift in Sources */,
 				ED6B42AF1DA86D9C00890EC9 /* CustomTableViewCell.swift in Sources */,
 				EDCDB98D1DAB73DD0070BFCC /* RoomCreateViewController.swift in Sources */,
+				EDC1ADC11DACB4E400159601 /* MessagesTableViewController.swift in Sources */,
 				ED9057AA1DA799DC007A0431 /* AppDelegate.swift in Sources */,
+				EDC1ADBF1DACB41100159601 /* Message.swift in Sources */,
+				ED77EF921DB5EF67003912D8 /* MessagesTableViewCell.swift in Sources */,
 				ED6B42B21DA8902300890EC9 /* RoomAll.swift in Sources */,
 				EDCDB98F1DAB7B100070BFCC /* RoomCreate.swift in Sources */,
 			);
